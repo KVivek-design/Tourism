@@ -1,0 +1,98 @@
+html
+{
+	font-family: Arial;
+ 
+}
+
+body
+{ 
+	background-image: url(21.jpg);
+        
+	background-size:110%;
+	background-repeat: no-repeat;	
+}
+
+
+#header 
+{ 
+	width:100%; 
+	height:200px; 
+}
+ 
+#logo
+{ 
+	float:left; 
+	width:5px; 
+	height:5px; 
+}
+
+#top_info 
+{ 
+	float:right; 
+	font-color:blue;
+	font-family:cooper black;
+	width:100px; 
+	height:20px;  
+	border-radius: 40px;
+	background-color: #e7e7e7; 
+	color:black;
+	text-align:center;
+}
+
+#navbar 
+{  
+	height: 20px; 
+	clear: both; 
+}
+
+
+#navbar ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #464640;
+}
+
+#navbar ul li 
+{
+    float: right;
+}
+
+#navbar ul li a 
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+#social
+{
+	padding: 10px;
+	float:right;
+	border-radius: 5px;
+}
+#social:hover
+{
+	border-radius: 40px;
+}
+
+#banner 
+{ 
+	height:120px; 
+	float: center;
+	padding:100px 200px 200px 200px;
+	clear: both;
+	text-align:justify;
+	font-family:aharoni;
+	font-size:22px;
+	color:black;
+}
+
+

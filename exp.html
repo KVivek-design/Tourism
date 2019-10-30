@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tourism Tribe</title>
+<link rel="shortcut icon" href="taucan.png">
+   
+  <style>
+html
+{
+	font-family: Arial;
+ 
+}
+
+body
+{ 
+	background-image: url(blur.jpg);
+	background-size: 100%;
+	background-repeat: no repeat;	
+}
+
+
+#header 
+{ 
+	width:100%; 
+//	height:200px; 
+}
+ 
+#logo
+{ 
+	float:left; 
+	width:5px; 
+	height:5px; 
+}
+
+.btn 
+{
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+   	float: right;
+    border-radius:20px;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #e7e7e7;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-color: black;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#top_info 
+{ 
+	float:right; 
+	font-color:black;
+	font-family:cooper black;
+	width:100px; 
+	height:40px;  
+	//margin:20px;
+	border-radius: 20px;
+	background-color: #e7e7e7; 
+	color: black;
+	text-align:center;
+}
+
+#navbar 
+{  
+	height: 20px; 
+	clear: both; 
+}
+
+
+#navbar ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#navbar ul li 
+{
+    float: right;
+}
+
+#navbar ul li a 
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+#social
+{
+	align:right;
+}
+
+#banner 
+{ 
+	height:120px; 
+	float: center;
+	padding:200px 200px 200px 200px;
+	clear: both;
+	text-align:justify;
+	font-family:aharoni;
+	font-size:22px;
+	font-color:rgb(0,0,0);
+}
+
+#left_col 
+{ 
+	float:left; 
+	width:100%; 
+	padding:20px; 
+	height:50%; 
+	//border:1px solid #333; 
+	color:#FFF; 
+}
+
+#right_col 
+{ 
+	float:right; 
+	width:250px; 
+	height:200px; 
+	border:1px solid #333; 
+	color:#FFF; 
+	padding:20px; 
+}
+
+#footer
+{ 
+	border:none;
+	padding:5px; 
+	overflow: hidden;
+    background-color: #333;
+	display: block;
+    color: white;
+    clear:both; 
+}
+
+#footer p 
+{
+	font-family:arial;
+	font-size:15px;
+	text-decoration:bold;
+	text-align:center;
+}
+
+#info
+{
+	float:left;
+}
+
+#soc
+{
+	float:top-right;
+}
+
+#cen
+{
+}
+
+
+  </style>
+</head>
+<body>
+<!-- container -->
+ <div id="container">
+ <!--  header -->
+	<div id="header">
+		<div id="logo"><img src="logo2.png" alt="logo" height="300px" width="300px"></img></div><br><br><br>
+		<div id="top_info"><a href="" margin="30px" style="color:#000000">LOG IN <br>SIGN UP</a></div>
+	
+		<div id="navbar">
+		<ul>
+			<button class="button"><span><i class="fa fa-home"></i> Home</span></button>
+			<button class="button"><span><i class="fa fa-bars"></i> Menu</span></button>
+			<button class="button"><span><i class="fa fa-trash"></i> Trash</span></button>
+			<button class="button"><span><i class="fa fa-close"></i> Close</span></button>
+			<button class="button"><span><i class="fa fa-folder"></i> Folder</span></button>
+		</ul>
+		</div>
+	</div>
+  <!-- content area -->
+	<div id="content_area">
+		<div id="banner">Tourism Tribe – an Indian travel company excels in domestic & international tour packages including guided group tours, exclusive tailor-made holidays, corporate MICE travel and inbound travel. Our vision is to provide a pleasant experience for everyone in the family, anytime, anywhere, around the world. Our team of extremely knowledgeable and extensively traveled professionals strives to provide the best quality service and value for our guests.</div>
+		<div id="left_col"><img src="man.png"></div>
+		<div id="right_col"><img src="raj.png"></div>
+	</div>
+  <!-- footer -->
+	<div id="footer">
+	<p id="info" style="text-align:left;"><b>Email:</b> belizetravel@gmail.com<br>
+	<b>Contact Us:</b> +91-98765453210<br>
+	<b>HQ:</b> Ambience Mall Gurgaon, National Highway - 8,<br>
+			&emsp;&emsp;	Ambience Island, Gurgaon,<br>
+			&emsp;&emsp;	Haryana 122002</p> 
+
+		<p id="cen" style="font-size:20px;">HAVE A QUESTION ? <br>Contact US...</p>
+	<p id="soc"> For more information you can visit our social media pages<br><br>
+		<a href="https://www.facebook.com/"><img id="social" src="fb.png" width="30px" height="30px"></a>
+		<a href="https://www.whatsapp.com/"><img id="social" src="wa.jpg" width="30px" height="30px"></a>
+		<a href="https://plus.google.com/people"><img id="social" src="goo.png" width="30px" height="30px"></a>
+		<a href="https://twitter.com/login?lang=en"><img id="social" src="tw.png" width="30px" height="30px"></a>
+	</p>
+	</div>
+ </div><!-- end container -->
+ 
+</body>
+</html>

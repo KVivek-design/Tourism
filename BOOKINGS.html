@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+
+function abc()
+{
+var b,B;
+b=document.getElementById("a").value
+B=document.getElementById("d").value 
+c=b*B
+document.getElementById("s").innerHTML=c
+}
+
+</script>
+
+<title>Tourism Tribe</title>
+<link rel="shortcut icon" href="taucan.png">
+<link rel="stylesheet" href="style 2.css">   
+  <style>
+  </style>
+</head>
+<body>
+
+<!-- container -->
+ <div id="container">
+ <!--  header -->
+	<div id="header">
+		<div id="navbar">
+		<ul>
+                 
+                        <li><a href="login2.html">LOGIN</a></li>
+			<li><a href="#">CONTACT US</a></li>
+			<li><a href="#">USER REVIEWS</a></li>
+			<li><a href="BOOKINGS.html"style="color:#0AF307">BOOKINGS</a></li>
+			<li><a href="Package.html">PACKAGES</a></li>
+			<li><a href="HOME.html">HOME</a></li>
+		</ul>
+		</div>
+		<div id="logo"><img src="logo1.png" alt="logo" height="200px" width="200px"></img></div><br><br><br>
+	
+		
+	</div>
+  <!-- content area -->
+	<div id="content_area">
+		<div id="banner">
+<h3>TICKET BOOKING : </h3>
+<fieldset>
+<form><br>
+                <input  type="text" align="center" name="search1" id="first" required value=""placeholder="From" class="form1"><button type="button" class="button"       ><font color="white"><></font></button><input type="text" placeholder="To" class="form2" id="second"required value="" name="search2">
+<br><br>
+<font size ="5px">
+ &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Departure :
+ &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+    <input type="date" required class="c1" name="depart">
+    <br><br>
+   &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Traveller's :   &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+
+ <input type=text id=d><br><br>
+  <form>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Ticket Type : &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+<select id=a onchange=abc()>
+<option value=0>select</option>
+<option value=1200>primary(1200 RS/-)</option>
+<option value=1500>Silver(1500 RS/-)</option>
+<option value=2000>Gold(2000 RS/-)</option>
+<option value=2500>Platinum(2500 RS/-)</option>
+</select>
+<p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  The Total value is : RS-
+<span id=s></span> </p>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+<a href="www.facebook.com" ><input type="submit" style="background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;" value="PAY NOW" onclick=def() ></button></a>
+</form>
+<script>
+function def()
+{
+alert("Do you wish to continue?")
+}
+</script>
+</fieldset>
+     </div>
+	 
+		<div id="left_col"><img src=""></div>
+		<div id="right_col"><img src=""></div>
+	</div>
+ 
+ </div><!-- end container -->
+ 
+</body>
+</html>

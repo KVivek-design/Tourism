@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>tourism tribe | Welcome</title>
+    
+<link rel="stylesheet" href="style1.css"> 
+  </head>
+  <body>
+
+
+
+    <div id="header">
+    <div id="navbar">
+    <ul>
+      <li><a href="SIGN UP 1.html"style="color:#0AF307">SIGN UP</a></li>           
+      <li><a href="login2.html">LOGIN</a></li>
+      <li><a href="CONTACT US.html">CONTACT US</a></li>
+      <li><a href="USER REVIEWS.html">USER REVIEWS</a></li>
+      <li><a href="BOOKINGS.html">BOOKINGS</a></li>
+      <li><a href="Package.html">PACKAGES</a></li>
+      <li><a href="HOME.html">HOME</a></li>
+    </ul>
+    </div>
+    <div id="logo"><img src="logo1.png" alt="logo" height="200px" width="200px"></img></div><br><br><br>
+
+
+<style>
+h2
+{
+    color: #000000 ;
+    text-align:center;
+    font-size:60px;
+}
+</style> 
+
+
+<h2 style align="center">CREATE NEW ACCOUNT</h2>
+<h3 style="color:blACK" align="center">It's free and always will be.</h3>
+</style>
+
+
+
+<br>
+<section id="boxes">
+      <div class="container">
+        <div class="box"> 
+          <INPUT type="image" src="s3.png">
+          </div>
+
+   <form action="onsubmit.html" name="myform" onsubmit="return(validate())" onsubmit="return(def())" method="post">   
+
+<b style="font-size:150%;">Firstname: </b>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+<input style="text-decoration-style:dotted; border-radius: 5px; " type="text" name="firstname" value="" placeholder="John" id="1">
+<br>
+
+<b style="font-size:150%;">Lastname: </b>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+<input style="text-decoration-style:dotted;border-radius: 5px;" type="text" name"lastname" value="" placeholder="Lastname" id="1">
+<br>
+
+<b style="font-size:150%;">Age:</b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+<input style="text-decoration-style:dotted;border-radius: 5px;" type="text" name="age" value="" placeholder="19" >
+<br>
+
+<b style="font-size:150%;">E-mail: </b>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+<input style="text-decoration-style:dotted;border-radius: 5px;" type="text" name="email" value="" placeholder="abc@def.com" id="2" /><br>
+
+<b style="font-size:150%;">Contact No.: </b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  
+<input style="text-decoration-style:dotted;border-radius: 5px;" type="text" name="contact" value="" placeholder="9146142187" id="3"/><br>
+
+          
+<b style="font-size:150%;"> Gender: </b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+<input type=radio name="Gender" value="male" style="font-size:100%"> Male 
+<input type=radio name="Gender" value="female" style="font-size:100%"> Female
+<input type=radio name="Gender" value="Other" style="font-size:100%"> Other <br>
+
+<b style="font-size:150%;">Password:</b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+<input style="text-decoration-style:dotted;border-radius: 5px;" type="password" name="pwd" value="" placeholder="********" id="4">
+<br>
+
+<b style="font-size:150%;">Re-Enter password:</b>&nbsp &nbsp &nbsp &nbsp 
+<input style="border-radius: 5px;" type="password" name="repwd" value="" placeholder="********" id="5" >
+<br>
+
+
+  <input type="submit" style="background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;" value="Sign Up"  ></button>
+
+</form>
+
+<script> 
+ 
+     function def()
+     {
+       confirm("do you want to submit?")
+        {
+        document.write("sucessfully submitted")
+       }
+     } 
+    function validate()
+    {
+      if (document.getElementById("1").value=="") 
+      {
+        alert("Please provide your name!");
+        document.getElementById("1").focus();
+        return false;
+      }
+
+      x=document.getElementById("2").value
+      var atpos = x.indexOf("@");
+      var dotpos = x.indexOf(".");
+
+      var dotposLast = x.lastIndexOf(".");
+
+      if (x=="" || atpos<1 || dotpos<atpos+2 || dotposLast+2>=x.length)
+       {
+        alert("Please provide Correct Email ID");
+        document.getElementById("2").focus();
+        return false;
+       }
+
+       a=document.getElementById("3").value
+       if (a=="" || a.length!= 10 || isNaN(a)) 
+       {
+        alert("Please provide a valid phone number");
+        document.getElementById("3").focus();
+        return false;
+       }
+
+       a=document.getElementById("4").value
+       b=document.getElementById("5").value
+       if (a=="" || a!=b)
+        {
+          alert("Please enter same Password");
+          document.getElementById("5").focus();
+          return false;
+        }
+
+    }
+  </script>
+
+</body>
+</html>

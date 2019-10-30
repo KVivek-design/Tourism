@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		
+function div_show() 
+{
+document.getElementById('abc').style.display = "block";
+}
+function abc_()
+{
+	window.open("HOME.html")
+}
+
+
+	</script>
+<title>Contact US</title>
+<link rel="stylesheet" href="style_contact.css">
+<link rel="shortcut icon" href="tt.png">
+
+</head>
+
+<body onload="javascript:div_show()">
+
+<div id="abc">
+
+<div id="popupContact">
+
+<img id="close" src="cross1.png" onclick =abc_() height=20 width=20>
+<form id="form">
+	<p style="font-family: aharoni;font-size: 30px;">Contact Form</p>
+	<hr>
+    <label id="name1" for="fname">First Name</label>&emsp;&nbsp;
+    <input type="text" id="box" name="firstname" placeholder="Your Good name.."><br>
+
+    <label id="name1" for="lname">Last Name</label>&emsp;&nbsp;
+    <input type="text" id="box" name="lastname" placeholder="Your last name.."><br>
+
+	<label id="name1" for="phno">Phone No</label>&emsp;&nbsp;&nbsp;&nbsp;
+	<input type="pin" id="box" name="phonenumber" placeholder="Enter Phone no.."><br>
+
+	<label id="name1" for="email">Email</label>&emsp;&emsp;&emsp;&emsp;
+	<input type="text" id="box" name="email_id" placeholder="Enter email addres.."><br>
+
+    <label id="name1" for="subject">Subject</label>&emsp;&emsp;&emsp;
+    <textarea id="box1" name="subject" placeholder="Reason...."></textarea><br>
+<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="submit" id="submit" name="button" value="Submit" onclick=abc_()>
+</form>
+</div>
+</div>
+</body>
+
+</html>

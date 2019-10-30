@@ -1,0 +1,221 @@
+
+<html>
+<head>
+<style>
+.buttonn{
+background-color:#00aaff;
+border:2px;
+font-size:16px;
+color:white;
+width:115px;
+height:50px;}
+.image
+{
+position:absolute;
+left:0px;
+width:55%;
+height:100%;
+}
+.top-left {
+    position: absolute;
+    top: 50px;
+    left: 16px;
+}
+</style>
+<style>
+.body background-color:grey;
+.fo{font-size:30px;
+}
+.image
+{
+position:absolute;
+left:0px;
+width:55%;
+height:100%;
+}
+.passenger
+{
+height:41px;
+width:30px;
+}
+.search{
+background-color:#00aaff;
+border:2px;
+font-size:16px;
+color:white;
+position:absolute;
+right:40%;
+width:150px;
+height:41px;}
+.button{
+background-color:#00aaff;
+border:2px;
+font-size:16px;
+color:white;
+width:35px;
+height:41px;}
+.button11{
+background-color:#00aaff;
+border:2px;
+font-size:16px;
+color:white;
+width:35px;
+height:41px;}
+.button22{
+background-color:#00aaff;
+border:2px;
+font-size:16px;
+color:white;
+width:35px;
+height:41px;}
+.grid{
+background-color:#8a00e6;
+position:absolute;
+right:0px;
+width:45%;
+height:100%;
+}
+.form1
+{
+width: 40%;
+    box-sizing: border-box;
+    border: 2px;
+    font-size: 16px;
+	padding:11px 30px;}
+.form2
+{
+width: 40%;
+    box-sizing: border-box;
+    border: 2px;
+    font-size: 16px;
+	padding:11px 30px;}
+.c1{
+
+height:41px;
+text-size:16px;
+text-align:center;
+}
+.c{
+height:41px;
+text-size:16px;
+}
+.adult
+{
+width:50px;
+height:41px;
+text-size:16px;
+text-align:center;
+}
+.child
+{
+width:50px;
+height:41px;
+text-size:16px;
+text-align:center;
+}
+.infant
+{
+width:50px;
+height:41px;
+text-size:16px;
+text-align:center;
+}
+</style>
+<script>
+function inc1()
+{
+var b=document.getElementById("adult").value;
+b++;
+document.getElementById("adult").value=b;
+if(b>9)
+{
+alert("You can book for 9 travellers at once");
+}
+}
+function dec1()
+{
+var a=document.getElementById("adult").value;
+a--;
+document.getElementById("adult").value=a;
+}
+function inc2()
+{
+var b=document.getElementById("child").value;
+b++;
+document.getElementById("child").value=b;
+if(b>9)
+{
+alert("You can book for 9 travellers at once");
+}
+}
+function dec2()
+{
+var a=document.getElementById("child").value;
+a--;
+document.getElementById("child").value=a;
+}
+function inc3()
+{
+var b=document.getElementById("infant").value;
+b++;
+document.getElementById("infant").value=b;
+if(b>9)
+{
+alert("You can book for 9 travellers at once");
+}
+}
+function dec3()
+{
+var a=document.getElementById("infant").value;
+a--;
+document.getElementById("infant").value=a;
+}
+
+function myFunction(){
+var x=document.getElementById("first").value;
+var y=document.getElementById("second").value;
+document.getElementById("second").value=x;
+document.getElementById("first").value=y;}
+</script>
+</head>
+<body>
+<div class="image">
+  <img src="scenic-balloon-lineup-background-air-wallpaper-images-wallpapers-hot.jpg" alt="Norway" style="width:100%;height:100%">
+  <div class="top-left" style="font family:Arial;">
+<font color="white"  align="center" size="5px"><b>Amazing Last Minute</b></font><br>
+<font color="white" size="6"><b>Summer Holiday Sale!</b></font><br>
+<font color="white" size="3px"><hr width="300"><font style="" size="10px">₹ 30,000 OFF</font><br><hr width="300">
+<font color="white" size="4px">on your summer holidays.</font><br>
+<font color="white" size="8px">HURRY!</font><br><br>
+<a href="flight2.html"><button type="button" class="buttonn">Book Now</button></a></div>
+  </div>
+<align="right"><div class="grid">
+<form><br>
+<input type="text" name="search1" id="first" value="" placeholder="From" class="form1"><button type="button" class="button" onclick="myFunction()"><font color="white"><></font></button><input type="text" placeholder="To" class="form2" id="second" value="" name="search2">
+<br><br>
+<font size ="5px">
+  Departure
+<input type="date" class="c1" name="depart">
+<br><br>
+   Traveller's  
+<button type="button" onclick="dec1()" class="button" value="1">-</button>
+<input type="text" class="adult" id="plus" placeholder="Adult">
+<button type="button" class="button" onclick="inc1()"  value="1">+</button><br><br>
+<button type="button" onclick="dec2()" class="button11" value="1">-</button>
+<input type="text" placeholder="Child" class="child" id="plus">
+<button type="button" class="button11" onclick="inc2()"  value="1">+</button><br><br>
+<button type="button" onclick="dec3()" class="button22" value="1">-</button>
+<input type="text" placeholder="Infant" class="infant" id="plus">
+<button type="button" class="button22" onclick="inc3()"  value="1">+</button>
+<br><br>
+    Select Class 
+<select class="c">
+<option value="sele">Select</option>
+<option value="eco">Economy</option>
+<option value="preeco">Premeium Economy</option>
+<option value="business">Business</option>
+</select>
+</select><br><br>
+<a href="flight2.html"><button type="button" class="search" width="10px" height="20px">Search</button></a>
+</form></div>
+
